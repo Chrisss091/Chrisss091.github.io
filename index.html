@@ -61,10 +61,21 @@
     button:hover {
       background-color: #cd3838;
     }
+
+    /* 新增的部分，用於設定圖片樣式 */
+    .logo-img {
+      width: 100%; /* 讓圖片寬度滿滿容器寬度 */
+      max-width: 200px; /* 圖片最大寬度為 200px */
+      margin-bottom: 20px; /* 圖片下方增加 20px 的間距 */
+    }
+
+
   </style>
   <title>聖誕抽抽樂</title>
 </head>
 <body>
+    <img class="logo-img" src="/image/christmas santa.png" alt="Logo Image">
+
   <div class="lottery-container">
     <div class="game-title">聖誕抽抽樂</div>
     <div class="winner" id="winnerName">請點擊開始抽獎</div>
