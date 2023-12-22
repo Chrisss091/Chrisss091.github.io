@@ -28,7 +28,7 @@
       position: relative; /* 加入 position: relative; 以確保 .logo-img 的絕對定位相對於 .lottery-container */
     }
 
-    .selectedWinner{
+    .Winner{
         color:coral
     }
 
@@ -45,7 +45,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 60% 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 將圖片向左上角偏移 50%，即居中 */
   }
 
   .logo-img {
