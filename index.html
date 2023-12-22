@@ -28,9 +28,7 @@
       position: relative; /* 加入 position: relative; 以確保 .logo-img 的絕對定位相對於 .lottery-container */
     }
 
-    .Winner{
-        color:  coral;
-    }
+   
 
     /* 手機版樣式 */
 @media screen and (max-width: 600px){
@@ -47,7 +45,6 @@
     justify-content: center;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -20%); /* 將圖片向左上角偏移 50%，即居中 */
   }
 
   .logo-img {
@@ -124,6 +121,7 @@
         const randomIndex = Math.floor(Math.random() * names.length);
         const selectedWinner = names[randomIndex];
         winnerNameElement.textContent = `恭喜抽中${selectedWinner}的禮物！`;
+        winnerNameElement.style.color = 'coral'; // 修改為你想要的文字顏色，這裡以綠色為例
       }
     }
   </script>
