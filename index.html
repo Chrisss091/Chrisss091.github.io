@@ -9,12 +9,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #4CAF50; /* 綠色背景 */
+      background-color: #0c2f0e; /* 綠色背景 */
       color: #fff; /* 白色文字 */
     }
 
     .lottery-container {
-      width: 90%;
+         width: 90%;
       max-width: 400px; /* 調整手機版容器最大寬度 */
       background-color: rgba(255, 255, 255, 0.8); /* 半透明的背景色 */
       border-radius: 8px;
@@ -43,14 +43,14 @@
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
-      background-color: #3498db;
+      background-color: #cd3838;
       color: #fff;
       border: none;
       border-radius: 4px;
     }
 
     button:hover {
-      background-color: #2980b9;
+      background-color: #cd3838;
     }
   </style>
   <title>聖誕抽抽樂</title>
@@ -71,13 +71,13 @@
       
       if (isFirstRound) {
         // 第一輪中獎者固定為 "楊宇靜"
-        winnerNameElement.textContent = '楊宇靜';
+        winnerNameElement.textContent = '恭喜抽中楊宇靜的禮物！';
         isFirstRound = false;
       } else {
         // 從四人中隨機選出中獎者
         const randomIndex = Math.floor(Math.random() * names.length);
         const selectedWinner = names[randomIndex];
-        winnerNameElement.textContent = selectedWinner;
+        winnerNameElement.textContent = `恭喜抽中${selectedWinner}的禮物！`;
       }
     }
   </script>
