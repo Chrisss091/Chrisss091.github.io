@@ -30,6 +30,12 @@
 
     /* 手機版樣式 */
 @media screen and (max-width: 600px) {
+
+    body {
+    height: 100vh; /* 將 body 的高度設定為視窗高度的 100% */
+    overflow: hidden; /* 可選，禁止垂直滾動條 */
+  }
+
   .lottery-container {
     display: flex;
     flex-direction: column;
@@ -38,7 +44,8 @@
   }
 
   .logo-img {
-    margin-bottom: 20px;
+   margin-top: 30px; /* 在手機畫面上將距離上方邊緣的距離調整為 20px */
+    margin-bottom: 20px; /* 在手機畫面上將距離下方邊緣的距離調整為 10px */
   }
 
 }
@@ -76,7 +83,7 @@
       max-width: 400px;
       height: auto; /* 保持高度自動調整，以保持圖片比例 */
       position: absolute;
-      top: 30%;
+      top: 20%;
       left: 50%;
       transform: translate(-50%, -50%); /* 將圖片向左上角偏移 50%，即居中 */
     }
