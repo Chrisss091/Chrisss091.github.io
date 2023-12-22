@@ -45,12 +45,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     
   }
 
   .logo-img {
-   margin-top: 15px; /* 在手機畫面上將距離上方邊緣的距離調整為 20px */
-    margin-bottom: 10px; /* 在手機畫面上將距離下方邊緣的距離調整為 10px */
+   margin: 15px 5px; /* 在手機畫面上將距離上方邊緣的距離調整為 20px */
+
   }
 
 }
@@ -122,7 +123,7 @@
         // 從四人中隨機選出中獎者
         const randomIndex = Math.floor(Math.random() * names.length);
         const selectedWinner = names[randomIndex];
-        winnerNameElement.innerHTML = `恭喜抽中${selectedWinner}的禮物！`;
+        winnerNameElement.textContent = `恭喜抽中${selectedWinner}的禮物！`;
       }
     }
   </script>
