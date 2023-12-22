@@ -79,6 +79,7 @@
 
     button:hover {
       background-color: #cd3838;
+    
     }
 
     /* 新增的部分，用於設定圖片樣式 */
@@ -120,8 +121,7 @@
         // 從四人中隨機選出中獎者
         const randomIndex = Math.floor(Math.random() * names.length);
         const selectedWinner = names[randomIndex];
-        winnerNameElement.textContent = `恭喜抽中${selectedWinner}的禮物！`;
-        winnerNameElement.style.color = 'coral'; // 修改為你想要的文字顏色，這裡以綠色為例
+        winnerNameElement.textContent = `恭喜抽中<span style="color: coral ;">${selectedWinner}</span>的禮物！`;
       }
     }
   </script>
