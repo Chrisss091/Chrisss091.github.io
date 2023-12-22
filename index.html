@@ -25,6 +25,7 @@
       padding: 20px;
       box-sizing: border-box;
       margin: 100px 20px; /* 調整 margin 屬性，控制容器與螢幕邊緣的距離 */
+      position: relative; /* 加入 position: relative; 以確保 .logo-img 的絕對定位相對於 .lottery-container */
     }
 
     /* 手機版樣式 */
@@ -64,9 +65,12 @@
 
     /* 新增的部分，用於設定圖片樣式 */
     .logo-img {
-      width: 100%; /* 讓圖片寬度滿滿容器寬度 */
-      max-width: 200px; /* 圖片最大寬度為 200px */
-      margin-bottom: 20px; /* 圖片下方增加 20px 的間距 */
+        width: 100%;
+      max-width: 200px;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 10px; /* 距離上方邊緣的距離 */
+      left: 10px; /* 距離左方邊緣的距離 */
     }
 
 
